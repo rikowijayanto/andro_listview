@@ -11,6 +11,8 @@ import android.widget.TextView;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 
+import de.hdodenhof.circleimageview.CircleImageView;
+
 public class HeroAdapter extends BaseAdapter {
     private Context context;
     private ArrayList <Hero> heroes = new ArrayList<>();
@@ -57,7 +59,7 @@ public class HeroAdapter extends BaseAdapter {
     private class ViewHolder {
         private TextView txtName;
         private TextView txtDescription;
-        private ImageView imageView;
+        private CircleImageView imageView;
 
         ViewHolder (View view) {
             txtName = view.findViewById(R.id.txt_name);
